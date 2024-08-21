@@ -1,34 +1,204 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
-
 body {
-background:#0a0a0a;
-font-family:Arial, Helvetica, sans-serif;
-margin:auto;
-color:#000000;
-width:1000px;
+    padding-top: 12px;
+    background-color: #025b3c
 }
 
-main {
-  border:2px solid #06284b;
-  background:#ffffffcc;
-  padding:5px 15px;
-  line-height:1.4em;
-  text-align:justify;
+/* brudda */
+
+.maincontainer {
+    padding: 2px;
+    background-color: rgba(37, 39, 41, 0.5);
+    margin: auto;
+    width: 768px;
+    color: linear-gradient(rgb(232, 241, 241), rgb(198, 207, 212));
+    text-shadow: 0px 0px 4px rgba(11, 37, 58, 0.488)
+}
+
+
+.header {
+  position: relative;
+    background-color: gray;
+    width: 768px;
+    height: 256px
+}
+
+.main {
+    font-size: 16px;
+    color: white;
+    margin: 2px;
+    overflow: auto;
+    padding: 24px 12px;
+    background-image: linear-gradient(rgba(56, 58, 58, 0.9), rgb(36, 50, 58, 0.9));
+}
+
+.footer {
+    margin: 128px 0px;
+    text-align: center;
+}
+
+.bar {
+    margin: 2px;
+    display: flex;
+}
+
+.toptab {
+    padding: 2px;
+    font-size: 12px;
+    letter-spacing: 6px;
+    margin: 1px;
+    gap: 6px;
+    background-image: linear-gradient(rgba(82, 85, 85, 0.5), rgba(50, 64, 72, 0.5));
+    text-align: center;
+    width: 100%;
+}
+
+#bgv {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -5;
   }
 
-header {
-  border:2px solid #094683;
-  background:#ffffff;
-  padding:5px 15px;
-  line-height:1.4em;
-  text-align:justify;
+.ye p {
+  color: rgb(195, 203, 207);
+  font-size: 14px;
+}
+
+.windowfull {
+  margin: 4px;
+
+}
+
+.windowfull a {
+  text-decoration: none;
+}
+
+  /* Window Tab Colors */
+
+.tabletab {
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px;
+    background-image: linear-gradient(rgba(25, 72, 85, 0.5), rgba(22, 37, 69, 0.5));
+}
+.tabletabred {
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 10px;
+  background-image: linear-gradient(rgba(85, 25, 33, 0.5), rgba(69, 22, 41, 0.5));
+}
+
+
+  .tablepad {
+    display: flex;
+    padding: 24px;
+    background-image: linear-gradient(rgba(204, 219, 223, 0.9), rgba(242, 245, 246, 0.9));
+    color: rgb(46, 46, 46);
+    box-shadow: 4px 4px 16px black;
+  }
+  .tablepad span {
+    line-height: normal;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
   }
 
-left {
-  display: inline;
-  width:50px
-  right:10px
-  border:2px solid #06284b; 
+
+
+
+
+  /* FONTS BRUDDA */
+
+  @font-face {
+    font-family: NotoSans-ExtraLight;
+    src: url(font/NotoSans-ExtraLight.ttf);
+  }
+  @font-face {
+    font-family: NotoSans-Light;
+    src: url(font/NotoSans-Light.ttf);
+  }
+  @font-face {
+    font-family: NotoSans-Thin;
+    src: url(font/NotoSans-Thin.ttf);
+  }
+
+  /* text styling */
+
+  .maincontainer {
+    font-family: "NotoSans-Light";
+  }
+
+  .toptab a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.toptab a:hover {
+    text-shadow: 0px 0px 8px;
+}
+
+.toptab a:any-link {
+  color: white;
+}
+
+a {
+  color: rgb(79, 99, 195);
+}
+
+a:visited {
+  color: rgb(110, 65, 207);
+}
+
+h1, h2, h3 {
+        font-family: "NotoSans-Thin";
+}
+
+.tablepad a {
+    color: rgb(46, 46, 46);
+  }
+
+.worksection {
+  padding: 24px;
+}
+.worksection a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.halfdiv {
+  width: 50%;
+}
+
+/* music player */
+
+.musicplayer {
+  text-shadow: 0px 0px 2px rgba(5, 0, 36, 0.98);
+
+  position: absolute; 
+  bottom: 8px; 
+  right: 16px; 
+  z-index: 2; }
+
+  .playbutton {
+      height: 32px;
+      width: 32px; 
+      overflow: hidden; 
+      border: none;
+      background-image: url(images/playbutton.png);
+      background-color: rgba(255, 255, 255, 0);
+    }
+  .playbutton:active {
+      background-image: url(images/playbuttondown.png);
+  }
+
+    .pausebutton {
+      height: 32px;
+      width: 32px; 
+      overflow: hidden; 
+      border: none;
+      background-image: url(images/pausebutton.png);
+      background-color: rgba(255, 255, 255, 0);
+    }
+    .pausebutton:active {
+      background-image: url(images/pausebuttondown.png);
   }
